@@ -13,12 +13,14 @@ const columns = computed(() => {
   ];
 });
 const rawRows = computed(() => {
-  const rows = billParts.value.map((billPart) => ({
+  const rows: {
+    [key: string]: any;
+  }[] = billParts.value.map((billPart) => ({
     "payment-item": billPart.name,
     ...members.value.reduce((acc, member) => {
       acc[member.name] = billPart.price;
       return acc;
-    }, {} as any),
+    }, {} as Record<string, number>),
     total: billPart.price,
   }));
   rows.push({
@@ -28,7 +30,7 @@ const rawRows = computed(() => {
         return rowAcc + (rowCur[member.name] || 0);
       }, 0);
       return acc;
-    }, {} as any),
+    }, {} as Record<string, number>),
     total: billParts.value.reduce((acc, billPart) => acc + billPart.price, 0),
   });
   return rows;

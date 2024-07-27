@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 const memberAddModalOpened = ref(false);
 const paymentItemAddModalOpened = ref(false);
 </script>
@@ -17,4 +17,16 @@ const paymentItemAddModalOpened = ref(false);
     <MemberAddModal v-model:opened="memberAddModalOpened" />
     <PaymentItemAddModal v-model:opened="paymentItemAddModalOpened" />
   </UContainer>
+</template> -->
+
+<template>
+  <NuxtPage />
 </template>
+
+<style lang="css">
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+</style>
