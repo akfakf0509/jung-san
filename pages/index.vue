@@ -1,7 +1,3 @@
-<script setup lang="ts">
-const { title } = useStore();
-</script>
-
 <template>
   <UContainer
     as="main"
