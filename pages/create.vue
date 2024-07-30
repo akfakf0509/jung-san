@@ -5,7 +5,7 @@ const { title } = storeToRefs(useStore());
 <template>
   <UContainer
     as="main"
-    class="flex flex-col justify-center align-center h-full gap-2"
+    class="flex flex-col justify-center align-center gap-4 min-h-full p-10"
   >
     <UFormGroup label="제목">
       <UInput v-model="title" />

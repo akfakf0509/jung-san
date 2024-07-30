@@ -3,10 +3,14 @@ const { payments } = storeToRefs(useStore());
 </script>
 
 <template>
-  <ul>
-    <li v-for="payment in payments">
-      <p>이름: {{ payment.name }}</p>
-      <p>가격: {{ payment.price }}</p>
-    </li>
+  <ul class="flex flex-col gap-2">
+    <UCard v-for="payment in payments">
+      <template #header>
+        {{ payment.name }}
+      </template>
+      <div>
+        <p>{{ formatNumber(payment.price) }}원</p>
+      </div>
+    </UCard>
   </ul>
 </template>

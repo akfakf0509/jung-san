@@ -10,6 +10,8 @@ function add() {
     name: state.name,
     price: state.price,
   });
+  state.name = "";
+  state.price = 0;
 }
 </script>
 
