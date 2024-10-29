@@ -19,7 +19,7 @@ importers:
         version: 3.13.2(@parcel/watcher@2.4.1)(@types/node@22.5.5)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.21.3)(terser@5.32.0)(vite@5.4.5(@types/node@22.5.5)(terser@5.32.0))(webpack-sources@3.2.3)
       pinia:
         specifier: ^2.2.1
-        version: 2.2.4(vue@3.5.12)
+        version: 2.2.5(vue@3.5.12)
       vue:
         specifier: ^3.4.36
         version: 3.5.12
@@ -2833,12 +2833,12 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
-  pinia@2.2.4:
-    resolution: {integrity: sha512-K7ZhpMY9iJ9ShTC0cR2+PnxdQRuwVIsXDO/WIEV/RnMC/vmSoKDTKW/exNQYPI+4ij10UjXqdNiEHwn47McANQ==}
+  pinia@2.2.5:
+    resolution: {integrity: sha512-T4PEQ4uFv2KIRC8A1Y3k1ceQGTDtxtd7nngYGu1IJUUSpuQoYfGq7w7rOc+f5YN1vx3mEs2NjjtN2IFbNS7jqA==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
-      vue: ^2.6.14 || ^3.3.0
+      vue: ^2.6.14 || ^3.5.11
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
@@ -4950,7 +4950,7 @@ snapshots:
   '@pinia/nuxt@0.5.5(magicast@0.3.5)(rollup@4.21.3)(vue@3.5.12)(webpack-sources@3.2.3)':
     dependencies:
       '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.21.3)(webpack-sources@3.2.3)
-      pinia: 2.2.4(vue@3.5.12)
+      pinia: 2.2.5(vue@3.5.12)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - magicast
@@ -7102,7 +7102,7 @@ snapshots:
 
   pify@2.3.0: {}
 
-  pinia@2.2.4(vue@3.5.12):
+  pinia@2.2.5(vue@3.5.12):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.12
