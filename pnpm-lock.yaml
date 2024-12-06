@@ -13,13 +13,13 @@ importers:
         version: 2.19.2(change-case@5.4.4)(magicast@0.3.5)(rollup@4.27.3)(vite@5.4.11(@types/node@22.9.1)(terser@5.36.0))(vue@3.5.13(typescript@5.6.3))
       '@pinia/nuxt':
         specifier: ^0.9.0
-        version: 0.9.0(magicast@0.3.5)(pinia@2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(rollup@4.27.3)
+        version: 0.9.0(magicast@0.3.5)(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(rollup@4.27.3)
       nuxt:
         specifier: ^3.12.4
         version: 3.14.1592(@parcel/watcher@2.5.0)(@types/node@22.9.1)(ioredis@5.4.1)(magicast@0.3.5)(rollup@4.27.3)(terser@5.36.0)(typescript@5.6.3)(vite@5.4.11(@types/node@22.9.1)(terser@5.36.0))
       pinia:
         specifier: ^2.2.1
-        version: 2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
+        version: 2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
       vue:
         specifier: ^3.4.36
         version: 3.5.13(typescript@5.6.3)
@@ -2586,15 +2586,12 @@ packages:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
 
-  pinia@2.2.8:
-    resolution: {integrity: sha512-NRTYy2g+kju5tBRe0oNlriZIbMNvma8ZJrpHsp3qudyiMEA8jMmPPKQ2QMHg0Oc4BkUyQYWagACabrwriCK9HQ==}
+  pinia@2.3.0:
+    resolution: {integrity: sha512-ohZj3jla0LL0OH5PlLTDMzqKiVw2XARmC1XYLdLWIPBMdhDW/123ZWr4zVAhtJm+aoSkFa13pYXskAvAscIkhQ==}
     peerDependencies:
-      '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
-      vue: ^2.6.14 || ^3.5.11
+      vue: ^2.7.0 || ^3.5.11
     peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
       typescript:
         optional: true
 
@@ -4475,10 +4472,10 @@ snapshots:
       '@parcel/watcher-win32-ia32': 2.5.0
       '@parcel/watcher-win32-x64': 2.5.0
 
-  '@pinia/nuxt@0.9.0(magicast@0.3.5)(pinia@2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(rollup@4.27.3)':
+  '@pinia/nuxt@0.9.0(magicast@0.3.5)(pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)))(rollup@4.27.3)':
     dependencies:
       '@nuxt/kit': 3.14.1592(magicast@0.3.5)(rollup@4.27.3)
-      pinia: 2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
+      pinia: 2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3))
     transitivePeerDependencies:
       - magicast
       - rollup
@@ -6531,13 +6528,15 @@ snapshots:
 
   pify@2.3.0: {}
 
-  pinia@2.2.8(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)):
+  pinia@2.3.0(typescript@5.6.3)(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       '@vue/devtools-api': 6.6.4
       vue: 3.5.13(typescript@5.6.3)
       vue-demi: 0.14.10(vue@3.5.13(typescript@5.6.3))
     optionalDependencies:
       typescript: 5.6.3
+    transitivePeerDependencies:
+      - '@vue/composition-api'
 
   pirates@4.0.6: {}
 
