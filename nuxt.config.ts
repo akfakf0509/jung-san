@@ -4,6 +4,6 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["types"],
   },
-  modules: ["@nuxt/eslint", "@pinia/nuxt", "@vueuse/nuxt"],
+  modules: ["@nuxt/eslint", "@pinia/nuxt", "@vueuse/nuxt", "reka-ui/nuxt"],
   eslint: {},
 });
