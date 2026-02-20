@@ -18,7 +18,7 @@
     "@vueuse/core": "^13.1.0",
     "@vueuse/nuxt": "13.9.0",
     "eslint": "^9.24.0",
-    "nuxt": "^3.16.2",
+    "nuxt": "^4.0.0",
     "pinia": "^3.0.2",
     "reka-ui": "^2.2.0",
     "tailwindcss": "^4.1.3",
